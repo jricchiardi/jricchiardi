@@ -1,0 +1,4 @@
+Sales Organization;Payer;Billing category;Billing Date;Billing Type;Created By;Created On;Sold-To Party;Billing Document;Posting Status;Selection;Char;Billing Type;Name of the payer;Name of sold-to party;Incomplete due to;Processing Status
+F81C;55709422;L;01/11/2019;ZARE;TI1240;31/10/2019;55709420;84446343;A;;Delivery-related billing document;AR Credit  Cust.Ret;CORTEVA AGRISCIENCE PARAGUAY S.A.;CORTEVA AGRISCIENCE PARAGUAY S.A.;Accounting Block;
+F81C;55498810;L;30/06/2020;ZARE;TI1240;29/06/2020;55501788;84476351;A;;Delivery-related billing document;AR Credit  Cust.Ret;ACEITERA GRALDEHEZA SA;ACEITERA GENERAL DEHEZA SA;Accounting Block;
+F81C;55498810;L;30/06/2020;ZARE;TI1240;29/06/2020;55501788;84476352;A;;Delivery-related billing document;AR Credit  Cust.Ret;ACEITERA GRALDEHEZA SA;ACEITERA GENERAL DEHEZA SA;Accounting Block;

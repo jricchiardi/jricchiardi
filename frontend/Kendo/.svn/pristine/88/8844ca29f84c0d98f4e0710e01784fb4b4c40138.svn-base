@@ -1,0 +1,12 @@
+{
+    "name": "Kendo",
+    "type": "yii2-extension",
+    "description": "Kendo",
+    "keywords": ["yii2", "Kendo"],
+    "license": "MIT",
+    "autoload": {
+	 "psr-4": {
+           "Kendo\\": ""		   
+        }
+    }
+}

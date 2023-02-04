@@ -1,0 +1,26 @@
+<?php
+
+$config = [
+    'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+    'components' => [
+    
+        'user' => [
+            'identityClass' => 'common\models\User',
+            'enableAutoLogin' => true,
+        ],
+        'request' => [
+            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            'cookieValidationKey' => 'LSZVaQI3uPbvn9c1PMiC9YcS4PeglJvl',
+        ],
+    ],
+];
+
+if (!YII_ENV_TEST) {
+    $config['bootstrap'][] = 'debug';
+    $config['modules']['debug'] = 'yii\debug\Module';
+    $config['bootstrap'][] = 'gii';
+    $config['modules']['gii'] = 'yii\gii\Module'; // <--- here
+   
+}
+
+return $config;

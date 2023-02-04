@@ -1,0 +1,2671 @@
+Corriendo importación automática SAP DAS Sales
+SQLSTATE[23000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_sale'. Cannot insert duplicate key in object 'dbo.sale'. The duplicate key value is (901028, 115146, 3, 11).
+The SQL being executed was: EXEC SP_Automatic_Import_SalesCorriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import tuvo 96 errores:
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1077555 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1077555 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1108872 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1108872 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1116165 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1116165 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1140235 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1140235 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1148049 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1148049 || Causa: HAY VENTA DUPLICADA
+GMID: 97071073 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1159304 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1159304 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1159304 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1191172 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1191172 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1220382 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1220382 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1233452 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1233452 || Causa: HAY VENTA DUPLICADA
+GMID: 97059701 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1236367 || Causa: HAY VENTA DUPLICADA
+GMID: 97059701 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1236367 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1236367 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1236367 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1358971 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1358971 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1362701 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1362701 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1374106 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1374106 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1431239 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1431239 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1432385 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1432385 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 1488190 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 1488190 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 348756 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 348756 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 348763 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 348763 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 348764 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 348764 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 348767 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 348767 || Causa: HAY VENTA DUPLICADA
+GMID: 298079 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 421680 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 421706 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 421706 || Causa: HAY VENTA DUPLICADA
+GMID: 97059701 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 421728 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 421728 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 421728 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 422032 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 422032 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 422062 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 422062 || Causa: HAY VENTA DUPLICADA
+GMID: 97059701 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 422082 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 422082 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 422082 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 422202 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 422202 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 422343 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 422343 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 430654 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 430654 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 645325 || Causa: HAY VENTA DUPLICADA
+GMID: 11093498 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 646973 || Causa: HAY VENTA DUPLICADA
+GMID: 11097385 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 646973 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 646973 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 646973 || Causa: HAY VENTA DUPLICADA
+GMID: 97059701 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 676052 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 679010 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 679010 || Causa: HAY VENTA DUPLICADA
+GMID: 97059701 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 682230 || Causa: HAY VENTA DUPLICADA
+GMID: 97059701 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 682230 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 682230 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 682230 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 693960 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 693960 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 702672 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 702672 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 703320 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 703320 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 711987 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 711987 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 802953 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 802953 || Causa: HAY VENTA DUPLICADA
+GMID: 97071073 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 811682 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 811682 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 811682 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 827369 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 827369 || Causa: HAY VENTA DUPLICADA
+GMID: 97059701 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 827371 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 827371 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 827371 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 827374 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 827374 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 3 || Cliente: 827375 || Causa: HAY VENTA DUPLICADA
+GMID: 99052536 || Descripcion: HAY VENTA DUPLICADA || Mes: 6 || Cliente: 827375 || Causa: HAY VENTA DUPLICADA
+
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+SQLSTATE[23000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_sale'. Cannot insert duplicate key in object 'dbo.sale'. The duplicate key value is (447470, 97050308, 8, 11).
+The SQL being executed was: EXEC SP_Automatic_Import_SalesCorriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+SQLSTATE[23000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_sale'. Cannot insert duplicate key in object 'dbo.sale'. The duplicate key value is (10014524, 97026969, 9, 11).
+The SQL being executed was: EXEC SP_Automatic_Import_SalesCorriendo importación automática SAP DAS Sales
+SQLSTATE[23000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_sale'. Cannot insert duplicate key in object 'dbo.sale'. The duplicate key value is (10014524, 97026969, 9, 11).
+The SQL being executed was: EXEC SP_Automatic_Import_SalesCorriendo importación automática SAP DAS Sales
+SQLSTATE[23000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_sale'. Cannot insert duplicate key in object 'dbo.sale'. The duplicate key value is (10014524, 97026969, 9, 11).
+The SQL being executed was: EXEC SP_Automatic_Import_SalesCorriendo importación automática SAP DAS Sales
+SQLSTATE[23000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of PRIMARY KEY constraint 'PK_sale'. Cannot insert duplicate key in object 'dbo.sale'. The duplicate key value is (10014524, 97026969, 9, 11).
+The SQL being executed was: EXEC SP_Automatic_Import_SalesCorriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('134470', 'La fila 3891 tiene un GMID 134470 inexistente', NULL, NULL, NULL, 3583), ('11092537', 'La fila 13442 tiene un GMID 11092537 inexistente', NULL, NULL, NULL, 3583), ('11041106', 'La fila 15776 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3583), ('11034851', 'La fila 20155 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3583), ('11034867', 'La fila 20163 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3583)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('134470', 'La fila 4030 tiene un GMID 134470 inexistente', NULL, NULL, NULL, 3587), ('11092537', 'La fila 14049 tiene un GMID 11092537 inexistente', NULL, NULL, NULL, 3587), ('11041106', 'La fila 16444 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3587), ('11034851', 'La fila 21122 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3587), ('11034867', 'La fila 21130 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3587)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('134470', 'La fila 4035 tiene un GMID 134470 inexistente', NULL, NULL, NULL, 3591), ('11092537', 'La fila 14079 tiene un GMID 11092537 inexistente', NULL, NULL, NULL, 3591), ('11041106', 'La fila 16481 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3591), ('11034851', 'La fila 21173 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3591), ('11034867', 'La fila 21181 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3591)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16517 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3598), ('97071198', 'La fila 20320 tiene un GMID 97071198 inexistente', NULL, NULL, NULL, 3598), ('11034851', 'La fila 21214 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3598), ('11034867', 'La fila 21222 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3598)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16627 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3604), ('97071198', 'La fila 20444 tiene un GMID 97071198 inexistente', NULL, NULL, NULL, 3604), ('11034851', 'La fila 21340 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3604), ('11034867', 'La fila 21348 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3604)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16627 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3608), ('97071198', 'La fila 20444 tiene un GMID 97071198 inexistente', NULL, NULL, NULL, 3608), ('11034851', 'La fila 21340 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3608), ('11034867', 'La fila 21348 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3608)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16628 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3612), ('97071198', 'La fila 20445 tiene un GMID 97071198 inexistente', NULL, NULL, NULL, 3612), ('11034851', 'La fila 21341 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3612), ('11034867', 'La fila 21349 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3612)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16638 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3616), ('97071198', 'La fila 20460 tiene un GMID 97071198 inexistente', NULL, NULL, NULL, 3616), ('11034851', 'La fila 21357 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3616), ('11034867', 'La fila 21365 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3616)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16701 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3624), ('97066372', 'La fila 21199 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3624), ('11034851', 'La fila 21438 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3624), ('11034867', 'La fila 21446 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3624)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16755 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3628), ('97066372', 'La fila 21268 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3628), ('11034851', 'La fila 21507 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3628), ('11034867', 'La fila 21515 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3628)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16789 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3632), ('97066372', 'La fila 21308 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3632), ('11034851', 'La fila 21547 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3632), ('11034867', 'La fila 21555 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3632)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16789 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3636), ('97066372', 'La fila 21309 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3636), ('11034851', 'La fila 21548 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3636), ('11034867', 'La fila 21556 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3636)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+No se encontró el archivo en el path: \\PHAZP0072fs\dataexchange\BW\PD0\100\ISC\sales.csvCorriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16812 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3642), ('97066372', 'La fila 21340 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3642), ('11034851', 'La fila 21579 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3642), ('11034867', 'La fila 21587 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3642)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16832 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3649), ('97066372', 'La fila 21373 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3649), ('11034851', 'La fila 21613 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3649), ('11034867', 'La fila 21621 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3649)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16879 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3653), ('97066372', 'La fila 21435 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3653), ('11034851', 'La fila 21675 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3653), ('11034867', 'La fila 21683 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3653)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16907 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3664), ('97066372', 'La fila 21469 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3664), ('11034851', 'La fila 21709 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3664), ('11034867', 'La fila 21717 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3664)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16926 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3672), ('97066372', 'La fila 21498 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3672), ('11034851', 'La fila 21738 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3672), ('11034867', 'La fila 21746 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3672)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16933 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3679), ('97066372', 'La fila 21510 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3679), ('11034851', 'La fila 21750 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3679), ('11034867', 'La fila 21758 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3679)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16933 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3683), ('97066372', 'La fila 21510 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3683), ('11034851', 'La fila 21750 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3683), ('11034867', 'La fila 21758 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3683)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16934 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3692), ('97066372', 'La fila 21514 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3692), ('11034851', 'La fila 21754 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3692), ('11034867', 'La fila 21762 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3692)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 16957 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3715), ('97066372', 'La fila 21578 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3715), ('11034851', 'La fila 21827 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3715), ('11034867', 'La fila 21835 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3715)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 17014 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3721), ('97066372', 'La fila 21654 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3721), ('11034851', 'La fila 21911 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3721), ('11034867', 'La fila 21919 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3721)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 17129 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3727), ('97066372', 'La fila 21792 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3727), ('11034851', 'La fila 22049 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3727), ('11034867', 'La fila 22057 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3727)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('11041106', 'La fila 17196 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3731), ('97066372', 'La fila 21879 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3731), ('11034851', 'La fila 22136 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3731), ('11034867', 'La fila 22144 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3731)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('97071056', 'La fila 16702 tiene un GMID 97071056 inexistente', NULL, NULL, NULL, 3735), ('11041106', 'La fila 17235 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3735), ('97066372', 'La fila 21933 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3735), ('11034851', 'La fila 22190 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3735), ('11034867', 'La fila 22198 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3735)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('97071056', 'La fila 16702 tiene un GMID 97071056 inexistente', NULL, NULL, NULL, 3739), ('11041106', 'La fila 17235 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3739), ('97066372', 'La fila 21933 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3739), ('11034851', 'La fila 22190 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3739), ('11034867', 'La fila 22198 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3739)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('97071056', 'La fila 16702 tiene un GMID 97071056 inexistente', NULL, NULL, NULL, 3743), ('11041106', 'La fila 17235 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3743), ('97066372', 'La fila 21933 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3743), ('11034851', 'La fila 22190 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3743), ('11034867', 'La fila 22198 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3743)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('97071056', 'La fila 16767 tiene un GMID 97071056 inexistente', NULL, NULL, NULL, 3747), ('11041106', 'La fila 17308 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3747), ('97066372', 'La fila 22035 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3747), ('11034851', 'La fila 22293 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3747), ('11034867', 'La fila 22301 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3747)Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+The SQL being executed was: INSERT INTO [import_error] ([gmid], [description], [ImportId]) VALUES ('97071056', 'La fila 16932 tiene un GMID 97071056 inexistente', NULL, NULL, NULL, 3751), ('11041106', 'La fila 17477 tiene un GMID 11041106 inexistente', NULL, NULL, NULL, 3751), ('97066372', 'La fila 22220 tiene un GMID 97066372 inexistente', NULL, NULL, NULL, 3751), ('11034851', 'La fila 22478 tiene un GMID 11034851 inexistente', NULL, NULL, NULL, 3751), ('11034867', 'La fila 22486 tiene un GMID 11034867 inexistente', NULL, NULL, NULL, 3751)Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The transaction log for database 'dow.forecast' is full due to 'LOG_BACKUP'.
+The SQL being executed was: INSERT INTO [import] ([FinishedCorrectly], [WithErrors], [Name], [TypeImportId], [CreatedAt]) VALUES (1, 0, 'sap-das-sales-1639915250-61bf1ef2cb2de.csv', 11, GETDATE())Corriendo importación automática SAP DAS Sales
+Ocurrió un error inesperado durante la ejecución
+SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The transaction log for database 'dow.forecast' is full due to 'LOG_BACKUP'.
+The SQL being executed was: INSERT INTO [import] ([FinishedCorrectly], [WithErrors], [Name], [TypeImportId], [CreatedAt]) VALUES (1, 0, 'sap-das-sales-1640001642-61c0706ab3f43.csv', 11, GETDATE())Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+Corriendo importación automática SAP DAS Sales
+Corriendo importación automática SAP DAS Sales
+Corriendo importación automática SAP DAS Sales
+Corriendo importación automática SAP DAS Sales
+Corriendo importación automática SAP DAS Sales
+Corriendo importación automática SAP DAS Sales
+Corriendo importación automática SAP DAS Sales
+Corriendo importación automática SAP DAS Sales
+Corriendo importación automática SAP DAS Sales
+Corriendo importación automática SAP DAS Sales
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó
+Corriendo importación automática SAP DAS Sales
+
+El import finalizó

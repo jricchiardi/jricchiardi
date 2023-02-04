@@ -1,0 +1,17 @@
+Options +FollowSymLinks
+IndexIgnore */*
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
+</IfModule>
+
+php_value max_input_time 220
+php_value upload_max_filesize 15M
+php_value post_max_size 15M
+php_value max_input_vars 50000

@@ -1,0 +1,5 @@
+Sales Organization;Payer;Billing category;Billing Date;Billing Type;Created by;Created On;Sold-to party;Billing Document;Posting Status;Selection;Char;Billing Type;Name of the payer;Name of sold-to party;Incomplete due to;Processing Status
+A131;10005915;A;31/08/2021;ZFA;TI1240;01/09/2021;10005915;961271113;A;;Order-related billing document;Advance Invoice;ESTANCIA DON MIGUEL SRL;ESTANCIA DON MIGUEL SRL;Accounting Block;
+A131;421680;L;31/08/2021;ZRE;TI1240;01/09/2021;421680;961271153;A;;Delivery-related billing document;Credit for Return;ACEITERA GENERAL DEHEZA SA;ACEITERA GENERAL DEHEZA SA;Accounting Block;
+A131;421680;L;31/08/2021;ZRE;TI1240;01/09/2021;421680;961271154;A;;Delivery-related billing document;Credit for Return;ACEITERA GENERAL DEHEZA SA;ACEITERA GENERAL DEHEZA SA;Accounting Block;
+A131;421680;L;31/08/2021;ZRE;TI1240;01/09/2021;421680;961271155;A;;Delivery-related billing document;Credit for Return;ACEITERA GENERAL DEHEZA SA;ACEITERA GENERAL DEHEZA SA;Accounting Block;
