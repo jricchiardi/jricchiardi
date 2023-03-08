@@ -151,17 +151,17 @@ header .container {
     padding: 10px;
 }
 .notifications {
-    background: #ef5145;
+    background: #2e5bbc;
     color: white;
 }
 .notifications:hover {
-    background: #be1d10;
+    background: #22438a;
     color: white;
     text-decoration: none;
 }
 .notifications:focus,
 .notifications:active {
-    background: #ef5145;
+    background: #2e5bbc;
     color: white;
     text-decoration: none;
 }
@@ -517,7 +517,7 @@ span.customSelect select {
 }
 .navbar {
     overflow-y: auto;
-    background: #455264;
+    background: #294a78;
     border-radius: 0;
     margin: 0;
     padding: 10px;
@@ -533,7 +533,7 @@ span.customSelect select {
 }
 .top-navbar {
     border-bottom: 1px solid #424F5A;
-    color: #919FAC;
+    color: #ffffff;
     font-size: 30px;
     margin-bottom: 20px;
     padding: 10px 0 16px 0;
@@ -545,7 +545,7 @@ span.customSelect select {
 }
 .top-navbar a {
     border: 1px solid #919FAC;
-    color: #919FAC;
+    color: #ffffff;
     display: inline-block;
     float: right;
     font-size: 15px;
@@ -572,7 +572,7 @@ span.customSelect select {
     top: 0;
 }
 .links-navbar li a {
-    color: #919FAC;
+    color: #ffffff;
 }
 .links-navbar li a:hover {
     color: white;
@@ -590,7 +590,7 @@ span.customSelect select {
     color: white;
 }
 .notifications-panel {
-    background: #ef5145;
+    background: #2e5bbc;
     display: none;
     padding: 20px;
     position: absolute;
