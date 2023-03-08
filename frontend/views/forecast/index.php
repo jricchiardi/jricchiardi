@@ -114,7 +114,7 @@ $productField->type('string')
         ->nullable(true);
 $productColumn = new \Kendo\UI\GridColumn();
 $productColumn->field('ForecastDescription');
-$productColumn->title('Producto');
+$productColumn->title('Product');
 $productColumn->width(200);
 $productColumn->lockable(false);
 $productColumn->locked(true);
@@ -131,7 +131,7 @@ $eneField->editable(TRUE);
 $eneField->type('number');
 $eneColumn = new \Kendo\UI\GridColumn();
 $eneColumn->field('January');
-$eneColumn->title('Ene');
+$eneColumn->title('Jan');
 $eneColumn->format('{0:n0}');
 $eneColumn->width(80);
 
@@ -186,7 +186,7 @@ $abrField->editable(TRUE);
 $abrField->type('number');
 $abrColumn = new \Kendo\UI\GridColumn();
 $abrColumn->field('April');
-$abrColumn->title('Abr');
+$abrColumn->title('Apr');
 $abrColumn->format('{0:n0}');
 $abrColumn->width(80);
 Yii::$app->utilcomponents->isColumnActive($abrColumn);
@@ -252,7 +252,7 @@ $agoField->editable(TRUE);
 $agoField->type('number');
 $agoColumn = new \Kendo\UI\GridColumn();
 $agoColumn->field('August');
-$agoColumn->title('Ago');
+$agoColumn->title('Aug');
 $agoColumn->format('{0:n0}');
 $agoColumn->width(80);
 Yii::$app->utilcomponents->isColumnActive($agoColumn);
@@ -264,7 +264,7 @@ $sepField->editable(TRUE);
 $sepField->type('number');
 $sepColumn = new \Kendo\UI\GridColumn();
 $sepColumn->field('September');
-$sepColumn->title('Sep');
+$sepColumn->title('Sept');
 $sepColumn->format('{0:n0}');
 $sepColumn->width(80);
 Yii::$app->utilcomponents->isColumnActive($sepColumn);
@@ -313,7 +313,7 @@ $dicField->editable(TRUE);
 $dicField->type('number');
 $dicColumn = new \Kendo\UI\GridColumn();
 $dicColumn->field('December');
-$dicColumn->title('Dic');
+$dicColumn->title('Dec');
 $dicColumn->format('{0:n0}');
 $dicColumn->width(80);
 Yii::$app->utilcomponents->isColumnActive($dicColumn);
@@ -368,7 +368,7 @@ $valueCenterIdField->editable(false);
 /* COLUMN ACTUAL MONTH */
 $monthField = new \Kendo\Data\DataSourceSchemaModelField('ActualMonth');
 $monthColumn = new \Kendo\UI\GridColumn();
-$monthColumn->title('Mes Actual');
+$monthColumn->title('ActualMonth');
 $monthColumn->field('ActualMonth');
 
 /* COLUMN CONCEPT */
@@ -376,7 +376,7 @@ $monthColumn->field('ActualMonth');
 $conceptField = new \Kendo\Data\DataSourceSchemaModelField('Concepto');
 $conceptColumn = new \Kendo\UI\GridColumn();
 $conceptColumn->field('Concepto');
-$conceptColumn->title('Concepto');
+$conceptColumn->title('Concept');
 
 $command = new \Kendo\UI\GridColumn();
 $command->addCommandItem(['name' => 'destroy', 'text' => Yii::t('app', 'Delete')])
@@ -506,20 +506,20 @@ $schemaR->model($schemaResume)
 $saveCommand = new \Kendo\UI\GridToolbarItem('save');
 $cancelCommand = new \Kendo\UI\GridToolbarItem('cancel');
 $detailExcelCommand = new \Kendo\UI\GridToolbarItem('excelDetail');
-$detailExcelCommand->text('<span class="k-icon k-i-excel"></span> Exportar Excel');
+$detailExcelCommand->text('<span class="k-icon k-i-excel"></span> Export Excel');
 
 $consolidExcelCommand = new \Kendo\UI\GridToolbarItem('excelConsolid');
-$consolidExcelCommand->text('<span class="k-icon k-i-excel"></span> Excel consolidado');
+$consolidExcelCommand->text('<span class="k-icon k-i-excel"></span> Consolidated Excel');
 
 $viewExtraDatasFilterCommand = new \Kendo\UI\GridToolbarItem('foreextra');
-$viewExtraDatasFilterCommand->text('<span class="k-icon k-i-search"></span> Ventas');
+$viewExtraDatasFilterCommand->text('<span class="k-icon k-i-search"></span> Sales');
 
 $viewCleanDatasFilterCommand = new \Kendo\UI\GridToolbarItem('clean');
-$viewCleanDatasFilterCommand->text('<span class="k-icon k-i-ungroup"></span> Limpiar Filtros');
+$viewCleanDatasFilterCommand->text('<span class="k-icon k-i-ungroup"></span> clear filters');
 
 
 $viewCalculateDatasFilterCommand = new \Kendo\UI\GridToolbarItem('calculateResume');
-$viewCalculateDatasFilterCommand->text('<span class="k-icon k-i-sum"></span> Calcular Resumen');
+$viewCalculateDatasFilterCommand->text('<span class="k-icon k-i-sum"></span> Resume');
 
 // **************************** LOAD array with information *********************************
 
