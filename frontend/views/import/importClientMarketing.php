@@ -9,6 +9,15 @@ use yii\widgets\ActiveForm;
 
 $this->title = Yii::t('app', 'Clients Marketing');
 ?>
+
+<div id="divBlack" style="display:none;">
+    <div id="loading" >
+        <img src="<?= Yii::$app->request->baseUrl ?>/images/loading.gif" width="60"/>
+        <br>
+        <?=Yii::t('app','Processing...') ?>
+    </div>
+</div>
+
 <div class="container full-width">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
