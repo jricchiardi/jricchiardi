@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="panel-heading"><?=Yii::t("app","Filters"); ?></div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin(['action' => ['index'], 'method' => 'get',   'enableClientScript' => false,]); ?>                               
-                <input type="submit" value="" name="export" id="export"  style=" width='40px';background:url('<?= Yii::$app->urlManager->baseUrl ?>/images/download.gif'); float:right; display:block; width: 42px;height: 38px;border: none;background-size: contain;background-repeat: no-repeat;"/>  <br/>               
+                <!--<input type="submit" value="" name="export" id="export"  style=" width='40px';background:url('<?= Yii::$app->urlManager->baseUrl ?>/images/download.gif'); float:right; display:block; width: 42px;height: 38px;border: none;background-size: contain;background-repeat: no-repeat;"/>  <br/>-->               
                 <?php echo $form->field($searchModel, 'CampaignId')->dropDownList(yii\helpers\ArrayHelper::map(\common\models\Campaign::find()->where(['not', ['IsFuture' => true]])->orderBy('Name DESC')->all(), 'CampaignId', 'Name'), ['CampaignId' => 'Name','class'=>'mySelectBoxClass hasCustomSelect']) ?>            
                 <?php echo $form->field($searchModel, 'TypeAuditId')->dropDownList(yii\helpers\ArrayHelper::map(\common\models\TypeAudit::find()->orderBy('Name DESC')->all(), 'TypeAuditId', 'Name'), ['prompt'=>Yii::t('app','Select'),'TypeAuditId' => 'Name','class'=>'mySelectBoxClass hasCustomSelect']) ?>            
                 <?php echo $form->field($searchModel, 'RsmId') ?>
