@@ -8,6 +8,9 @@ use common\models\AuditSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\PhpSpreadsheet\Style\Fill;
+
 
 /**
  * AuditController implements the CRUD actions for Audit model.
@@ -27,7 +30,7 @@ class AuditController extends \common\components\controllers\CustomController {
                 $items = $searchModel->export();
 
                 // Read the file
-                $objReader = \PHPExcel_IOFactory::createReader('Excel2007');
+                $objReader = IOFactory::createReader('Xlsx');
                 $objPHPExcel = $objReader->load('templates/Audit.xlsx');
                 $objPHPExcel->setActiveSheetIndex(0);
                 $objSheet = $objPHPExcel->getActiveSheet();
@@ -44,7 +47,7 @@ class AuditController extends \common\components\controllers\CustomController {
 
                     if ($row % 2 == 0)
                         $objSheet->getStyle("A$row:W$row")->applyFromArray(
-                                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                                array('fill' => array('type' => Fill::FILL_SOLID,
                                         'color' => array('rgb' => 'F2F2F2')
                                     )
                         ));
@@ -62,7 +65,7 @@ class AuditController extends \common\components\controllers\CustomController {
                 header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT'); // always modified
                 header('Cache-Control: cache, must-revalidate'); // HTTP/1.1
                 header('Pragma: public'); // HTTP/1.0
-                $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+                $objWriter = IOFactory::createWriter($objPHPExcel, 'Excel2007');
                 $objWriter->save('php://output');
             }
         }

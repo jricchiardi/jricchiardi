@@ -22,7 +22,8 @@
         "yiisoft/yii2-bootstrap": "^2.0@beta",
         "vlucas/phpdotenv": "^5.5@dev",
         "league/oauth2-client": "dev-master",
-        "microsoft/microsoft-graph": "dev-dev"
+        "microsoft/microsoft-graph": "dev-dev",
+        "phpoffice/phpspreadsheet": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
