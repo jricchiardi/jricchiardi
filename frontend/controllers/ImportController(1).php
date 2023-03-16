@@ -26,7 +26,7 @@ class ImportController extends \common\components\controllers\CustomController {
                 $import->TypeImportId = \common\models\TypeImport::CyO;
                 $pathFile = 'uploads/' . $name;
 
-                $objReader = \PHPExcel_IOFactory::createReaderForFile($pathFile);
+                $objReader = IOFactory::createReaderForFile($pathFile);
                 $objReader->setReadDataOnly(true);
                 $objPHPExcel = $objReader->load($pathFile);
                 $sheet = $objPHPExcel->getSheet(0);
@@ -79,7 +79,7 @@ class ImportController extends \common\components\controllers\CustomController {
                 $import->TypeImportId = \common\models\TypeImport::SETTING;
                 $pathFile = 'uploads/' . $name;
 
-                $objReader = \PHPExcel_IOFactory::createReaderForFile($pathFile);
+                $objReader = IOFactory::createReaderForFile($pathFile);
                 $objReader->setReadDataOnly(true);
                 $objPHPExcel = $objReader->load($pathFile);
                 $sheet = $objPHPExcel->getSheet(0);
@@ -124,7 +124,7 @@ class ImportController extends \common\components\controllers\CustomController {
                 $import->TypeImportId = \common\models\TypeImport::CLIENT;
                 $pathFile = 'uploads/' . $name;
 
-                $objReader = \PHPExcel_IOFactory::createReaderForFile($pathFile);
+                $objReader = IOFactory::createReaderForFile($pathFile);
                 $objReader->setReadDataOnly(true);
                 $objPHPExcel = $objReader->load($pathFile);
                 $sheet = $objPHPExcel->getSheet(0);
@@ -169,7 +169,7 @@ class ImportController extends \common\components\controllers\CustomController {
 
                 $pathFile = 'uploads/' . $name;
 
-                $objReader = \PHPExcel_IOFactory::createReaderForFile($pathFile);
+                $objReader = IOFactory::createReaderForFile($pathFile);
                 $objReader->setReadDataOnly(true);
                 $objPHPExcel = $objReader->load($pathFile);
                 $sheet = $objPHPExcel->getSheet(0);
@@ -213,7 +213,7 @@ class ImportController extends \common\components\controllers\CustomController {
 
                 $pathFile = 'uploads/' . $name;
 
-                $objReader = \PHPExcel_IOFactory::createReaderForFile($pathFile);
+                $objReader = IOFactory::createReaderForFile($pathFile);
                 $objReader->setReadDataOnly(true);
                 $objPHPExcel = $objReader->load($pathFile);
                 $sheet = $objPHPExcel->getSheet(0);
@@ -262,7 +262,7 @@ class ImportController extends \common\components\controllers\CustomController {
                 $import->TypeImportId = \common\models\TypeImport::PLAN;
                 $pathFile = 'uploads/' . $name;
 
-                $objReader = \PHPExcel_IOFactory::createReaderForFile($pathFile);
+                $objReader = IOFactory::createReaderForFile($pathFile);
                 $objReader->setReadDataOnly(true);
                 $objPHPExcel = $objReader->load($pathFile);
                 $sheet = $objPHPExcel->getSheet(0);
@@ -319,7 +319,7 @@ class ImportController extends \common\components\controllers\CustomController {
                 $import->TypeImportId = \common\models\TypeImport::OFFLINE;
                 $pathFile = 'uploads/' . $name;
 
-                $objReader = \PHPExcel_IOFactory::createReaderForFile($pathFile);
+                $objReader = IOFactory::createReaderForFile($pathFile);
                 $objReader->setReadDataOnly(true);
                 $objPHPExcel = $objReader->load($pathFile);
                 $sheet = $objPHPExcel->getSheet(0);
