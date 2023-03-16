@@ -8,6 +8,9 @@ use common\models\SnapshotForecastSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\PhpSpreadsheet\Style\Fill;
+
 
 /**
  * SnapshotForecastController implements the CRUD actions for SnapshotForecast model.
@@ -62,7 +65,7 @@ class SnapshotForecastController extends \common\components\controllers\CustomCo
         $title = Yii::t("app", "Comparative Report (") . date("Y-m-d") . ")";
 
         // Read the file
-        $objReader = \PHPExcel_IOFactory::createReader('Excel2007');
+        $objReader = IOFactory::createReader('Xlsx');
         $objPHPExcel = $objReader->load('templates/Comparative_Report.xlsx');
         $objPHPExcel->getProperties()->setTitle($title);
         $objSheet = $objPHPExcel->getActiveSheet();
@@ -97,7 +100,7 @@ class SnapshotForecastController extends \common\components\controllers\CustomCo
 
             if ($row % 2 == 0)
                 $objSheet->getStyle("A$row:V$row")->applyFromArray(
-                        array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                        array('fill' => array('type' => Fill::FILL_SOLID,
                                 'color' => array('rgb' => 'F2F2F2')
                             )
                 ));
@@ -114,7 +117,7 @@ class SnapshotForecastController extends \common\components\controllers\CustomCo
         header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT'); // always modified
         header('Cache-Control: cache, must-revalidate'); // HTTP/1.1
         header('Pragma: public'); // HTTP/1.0
-        $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+        $objWriter = IOFactory::createWriter($objPHPExcel, 'Excel2007');
         $objWriter->save('php://output');
     }
 

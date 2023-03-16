@@ -9,7 +9,8 @@ use common\models\Setting;
 use common\models\TypeAudit;
 use Exception;
 use PHPExcel;
-use PHPExcel_IOFactory;
+use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\PhpSpreadsheet\Style\Fill;
 use PHPExcel_Style_Fill;
 use PHPExcel_Style_Protection;
 use Yii;
@@ -358,7 +359,7 @@ ORDER BY Pais, DSM, PerformanceCenter, TradeProduct, Gmid
         $forecasts = $connection->createCommand($sql)->queryAll();
 
         // Read the file
-        $objReader = PHPExcel_IOFactory::createReader('Excel2007');
+        $objReader = IOFactory::createReader('Xlsx');
         $objPHPExcel = $objReader->load('templates/Forecast_Marketing_Offline_Template.xlsx');
         $objPHPExcel->getProperties()->setTitle($title);
 
@@ -419,7 +420,7 @@ ORDER BY Pais, DSM, PerformanceCenter, TradeProduct, Gmid
             if ($row % 2 == 0) {
                 $objSheet->getStyle("A$row:Y$row")->applyFromArray([
                     'fill' => [
-                        'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                        'type' => Fill::FILL_SOLID,
                         'color' => [
                             'rgb' => 'F2F2F2'
                         ]
@@ -435,7 +436,7 @@ ORDER BY Pais, DSM, PerformanceCenter, TradeProduct, Gmid
         if (($monthEnableFrom - 1) > 1) {
             $objSheet->getStyle("I7:" . $cellFinished . "$row")->applyFromArray([
                 'fill' => [
-                    'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                    'type' => Fill::FILL_SOLID,
                     'color' => [
                         'rgb' => 'BDBDBD'
                     ],
@@ -457,7 +458,7 @@ ORDER BY Pais, DSM, PerformanceCenter, TradeProduct, Gmid
         // LOCK THE QUARTERS AND TOTAL
         $solidColor = [
             'fill' => [
-                'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                'type' => Fill::FILL_SOLID,
                 'color' => [
                     'rgb' => 'BDBDBD'
                 ]
@@ -717,7 +718,7 @@ WHERE Volume <> 0 AND CampaignId = $campaign->CampaignId
         $connection = Yii::$app->db;
         $consolidates = $connection->createCommand($sql)->queryAll();
 
-        $objReader = PHPExcel_IOFactory::createReader('Excel2007');
+        $objReader = IOFactory::createReader('Xlsx');
         $objPHPExcel = $objReader->load('templates/Reporte_Real_Ventas_Forecast_Marketing_Consolidado.xlsx');
         $objPHPExcel->setActiveSheetIndex();
         $objSheet = $objPHPExcel->getActiveSheet();
@@ -749,7 +750,7 @@ WHERE Volume <> 0 AND CampaignId = $campaign->CampaignId
             if ($row % 2 == 0) {
                 $objSheet->getStyle("A$row:O$row")->applyFromArray([
                     'fill' => [
-                        'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                        'type' => Fill::FILL_SOLID,
                         'color' => [
                             'rgb' => 'F2F2F2'
                         ]
@@ -1305,7 +1306,7 @@ GROUP BY pm_product.TradeProductId, tp.Description
         header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT'); // always modified
         header('Cache-Control: cache, must-revalidate'); // HTTP/1.1
         header('Pragma: public'); // HTTP/1.0
-        $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+        $objWriter = IOFactory::createWriter($objPHPExcel, 'Excel2007');
         $objWriter->save('php://output');
     }
 }

@@ -5,6 +5,9 @@ namespace frontend\controllers;
 use Yii;
 use common\models\ClientSeller;
 
+use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\PhpSpreadsheet\Style\Fill;
+
 /**
  * Site controller
  */
@@ -49,7 +52,7 @@ class ForecastController extends \common\components\controllers\CustomController
 
 
         // Read the file
-        $objReader = \PHPExcel_IOFactory::createReader('Excel2007');
+        $objReader = IOFactory::createReader('Xlsx');
         $objPHPExcel = $objReader->load('templates/Forecast_Offline_Template.xlsx');
         $objPHPExcel->getProperties()->setTitle($title);
         $objSheet = $objPHPExcel->getActiveSheet();
@@ -102,7 +105,7 @@ class ForecastController extends \common\components\controllers\CustomController
             $objSheet->SetCellValue(chr($charCol++) . $row, '=I' . $row . '+M' . $row . '+Q' . $row . '+U' . $row);
             if ($row % 2 == 0)
                 $objSheet->getStyle("A$row:V$row")->applyFromArray(
-                        array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                        array('fill' => array('type' => Fill::FILL_SOLID,
                                 'color' => array('rgb' => 'F2F2F2')
                             )
                 ));
@@ -115,7 +118,7 @@ class ForecastController extends \common\components\controllers\CustomController
 
         if (($monthEnableFrom - 1) > 1) {
             $objSheet->getStyle("F7:" . $cellFinished . "$row")->applyFromArray(
-                    array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                    array('fill' => array('type' => Fill::FILL_SOLID,
                             'color' => array('rgb' => 'BDBDBD')
                         )
             ));
@@ -136,37 +139,37 @@ class ForecastController extends \common\components\controllers\CustomController
         $objSheet->getStyle("V7:V$row")->getProtection()->setLocked(\PHPExcel_Style_Protection::PROTECTION_PROTECTED);
 
         $objSheet->getStyle("M7:" . "M$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'BDBDBD')
                     )
         ));
 
         $objSheet->getStyle("I7:" . "I$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'BDBDBD')
                     )
         ));
 
         $objSheet->getStyle("Q7:" . "Q$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'BDBDBD')
                     )
         ));
 
         $objSheet->getStyle("U7:" . "U$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'BDBDBD')
                     )
         ));
 
         $objSheet->getStyle("V7:" . "V$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'BDBDBD')
                     )
         ));
 
         // EXPORT EXCEL TO IMPORT
-        // Redirect output to a client’s web browser (Excel2007)
+        // Redirect output to a client’s web browser (Xlsx)
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
         header("Content-Disposition: attachment;filename=\"$title.xlsx\"");
         header('Cache-Control: max-age=0');
@@ -177,7 +180,7 @@ class ForecastController extends \common\components\controllers\CustomController
         header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT'); // always modified
         header('Cache-Control: cache, must-revalidate'); // HTTP/1.1
         header('Pragma: public'); // HTTP/1.0
-        $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+        $objWriter = IOFactory::createWriter($objPHPExcel, 'Xlsx');
         $objWriter->save('php://output');
     }
 
@@ -416,7 +419,7 @@ ORDER BY ForecastDescription ASC
 
         $consolidates = $report->search($params);
 
-        $objReader = \PHPExcel_IOFactory::createReader('Excel2007');
+        $objReader = IOFactory::createReader('Xlsx');
         $objPHPExcel = $objReader->load('templates/Reporte_Real_Ventas_Forecast_Consolidado.xlsx');
         $objPHPExcel->setActiveSheetIndex(0);
         $objSheet = $objPHPExcel->getActiveSheet();
@@ -461,7 +464,7 @@ ORDER BY ForecastDescription ASC
 
            if ($row % 2 == 0)
                 $objSheet->getStyle("A$row:V$row")->applyFromArray(
-                        array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                        array('fill' => array('type' => Fill::FILL_SOLID,
                                 'color' => array('rgb' => 'F2F2F2')
                             )
                 ));
@@ -471,7 +474,7 @@ ORDER BY ForecastDescription ASC
         }
 
         // EXPORT EXCEL TO IMPORT
-        // Redirect output to a client’s web browser (Excel2007)
+        // Redirect output to a client’s web browser (Xlsx)
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
         header("Content-Disposition: attachment;filename=\"$title.xlsx\"");
         header('Cache-Control: max-age=0');
@@ -482,7 +485,7 @@ ORDER BY ForecastDescription ASC
         header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT'); // always modified
         header('Cache-Control: cache, must-revalidate'); // HTTP/1.1
         header('Pragma: public'); // HTTP/1.0
-        $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+        $objWriter = IOFactory::createWriter($objPHPExcel, 'Xlsx');
         $objWriter->save('php://output');
     }
 
@@ -617,7 +620,7 @@ ORDER BY ForecastDescription ASC
 
 
         // Read the file
-        $objReader = \PHPExcel_IOFactory::createReader('Excel2007');
+        $objReader = IOFactory::createReader('Xlsx');
         $objPHPExcel = $objReader->load('templates/Ventas_Forecast_Detallado_Template.xlsx');
 
         $objPHPExcel->setActiveSheetIndex(0);
@@ -658,7 +661,7 @@ ORDER BY ForecastDescription ASC
             $objSheet->SetCellValue(chr($charCol++) . $row, '=I' . $row . '+M' . $row . '+Q' . $row . '+U' . $row);
             if ($row % 2 == 0)
                 $objSheet->getStyle("A$row:W$row")->applyFromArray(
-                        array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                        array('fill' => array('type' => Fill::FILL_SOLID,
                                 'color' => array('rgb' => 'F2F2F2')
                             )
                 ));
@@ -667,31 +670,31 @@ ORDER BY ForecastDescription ASC
 
 
             $objSheet->getStyle("M7:" . "M$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FDE9D9')
                     )
         ));
 
         $objSheet->getStyle("I7:" . "I$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FDE9D9')
                     )
         ));
 
         $objSheet->getStyle("Q7:" . "Q$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FDE9D9')
                     )
         ));
 
         $objSheet->getStyle("U7:" . "U$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FDE9D9')
                     )
         ));
 
         $objSheet->getStyle("V7:" . "V$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FABF8F')
                     )
         ));
@@ -732,45 +735,45 @@ ORDER BY ForecastDescription ASC
             $objSheet->SetCellValue(chr($charCol++) . $row, '=I' . $row . '+M' . $row . '+Q' . $row . '+U' . $row);
             if ($row % 2 == 0)
                 $objSheet->getStyle("A$row:W$row")->applyFromArray(
-                        array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                        array('fill' => array('type' => Fill::FILL_SOLID,
                                 'color' => array('rgb' => 'F2F2F2')
                             )
                 ));
             $row++;
         }
    $objSheet->getStyle("M7:" . "M$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FDE9D9')
                     )
         ));
 
         $objSheet->getStyle("I7:" . "I$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FDE9D9')
                     )
         ));
 
         $objSheet->getStyle("Q7:" . "Q$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FDE9D9')
                     )
         ));
 
         $objSheet->getStyle("U7:" . "U$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FDE9D9')
                     )
         ));
 
         $objSheet->getStyle("V7:" . "V$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FABF8F')
                     )
         ));
         $objPHPExcel->setActiveSheetIndex(0);
         $objPHPExcel->getActiveSheet();
         // EXPORT EXCEL TO IMPORT
-        // Redirect output to a client’s web browser (Excel2007)
+        // Redirect output to a client’s web browser (Xlsx)
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
         header("Content-Disposition: attachment;filename=\"$title.xlsx\"");
         header('Cache-Control: max-age=0');
@@ -781,7 +784,7 @@ ORDER BY ForecastDescription ASC
         header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT'); // always modified
         header('Cache-Control: cache, must-revalidate'); // HTTP/1.1
         header('Pragma: public'); // HTTP/1.0
-        $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+        $objWriter = IOFactory::createWriter($objPHPExcel, 'Xlsx');
         $objWriter->save('php://output');
     }
 

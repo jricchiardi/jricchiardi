@@ -13,7 +13,8 @@ use common\models\Client;
 use common\models\PerformanceCenter;
 use common\models\TableResume;
 use common\models\TradeProduct;
-use PHPExcel_IOFactory;
+use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\PhpSpreadsheet\Style\Fill;
 use PHPExcel_Style_Fill;
 use Yii;
 use yii\data\Pagination;
@@ -459,7 +460,7 @@ class TestController extends CustomController
 
         if (Yii::$app->request->post('do-export') === "1") {
             // Read the file
-            $objReader = PHPExcel_IOFactory::createReader('Excel2007');
+            $objReader = IOFactory::createReader('Xlsx');
             $objPHPExcel = $objReader->load('templates/Reporte_Test.xlsx');
             $objPHPExcel->setActiveSheetIndex(0);
             $objSheet = $objPHPExcel->getActiveSheet();
@@ -494,7 +495,7 @@ class TestController extends CustomController
 
                 if ($row % 2 == 0)
                     $objSheet->getStyle("A$row:W$row")->applyFromArray(
-                        array('fill' => array('type' => PHPExcel_Style_Fill::FILL_SOLID,
+                        array('fill' => array('type' => Fill::FILL_SOLID,
                             'color' => array('rgb' => 'F2F2F2')
                         )
                         ));
@@ -513,7 +514,7 @@ class TestController extends CustomController
             header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT'); // always modified
             header('Cache-Control: cache, must-revalidate'); // HTTP/1.1
             header('Pragma: public'); // HTTP/1.0
-            $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+            $objWriter = IOFactory::createWriter($objPHPExcel, 'Excel2007');
             $objWriter->save('php://output');
         } else {
             $filterReporteSegmentoNegocioResultados = new FilterReporteSegmentoNegocioResultados();
