@@ -8,13 +8,15 @@ use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\ContactForm;
+use League\OAuth2\Client\Provider\GenericProvider;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 
-use League\OAuth2\Client\Provider\Microsoft;
+
+
 use Microsoft\Graph\Graph;
 use Microsoft\Graph\Model;
 
@@ -86,19 +88,20 @@ class SiteController extends Controller
     public function actionLogin_ad()
     {
 
-        // $_ENV['CLIENT_ID'];
-        // $_ENV['TENANT_ID'];
-        // $_ENV['GRAPH_USER_SCOPES'];
+        $oauthClient = new GenericProvider([
 
-        $provider = new Microsoft([
-            'clientId'     => '{your-client-id}',
-            'clientSecret' => '{your-client-secret}',
-            'redirectUri'  => 'https://example.com/callback-url',
+            'clientId'                => $_ENV['CLIENT_ID'],
+            'clientSecret'            => $_ENV['SECRET_ID'],
+            'redirectUri'             => 'http://localhost/apptest/frontend/web/site/login',
+            'urlAuthorize'            => 'https://login.microsoftonline.com/' . $_ENV['TENANT_ID'] . '/oauth2/v2.0/authorize',
+            'urlAccessToken'          => 'https://login.microsoftonline.com/' . $_ENV['TENANT_ID'] . '/oauth2/v2.0/token',
+            'urlResourceOwnerDetails' => 'https://graph.asdasdmicrosoft.com/v1.0/me',
+            'scopes'                  => $_ENV['GRAPH_USER_SCOPES']
         ]);
 
-        echo '<pre>';
-        var_dump($_ENV['CLIENT_ID']);
-        die();
+
+        $authorizationUrl = $oauthClient->getAuthorizationUrl();
+        Yii::$app->getResponse()->redirect($authorizationUrl);
         // $graph = new GraphHelper;
         // $graph->initializeGraphForUserAuth();
         // var_dump($graph->getUser());
@@ -157,14 +160,40 @@ class SiteController extends Controller
 
     public function actionLogin()
     {
-        $this->layout = 'login';
+        if (Yii::$app->request->get('code')) {
+            $oauthClient = new GenericProvider([
 
+                'clientId'                => $_ENV['CLIENT_ID'],
+                'clientSecret'            => $_ENV['SECRET_ID'],
+                'redirectUri'             => 'http://localhost/apptest/frontend/web/site/login',
+                'urlAuthorize'            => 'https://login.microsoftonline.com/' . $_ENV['TENANT_ID'] . '/oauth2/v2.0/authorize',
+                'urlAccessToken'          => 'https://login.microsoftonline.com/' . $_ENV['TENANT_ID'] . '/oauth2/v2.0/token',
+                'urlResourceOwnerDetails' => 'https://graph.asdasdmicrosoft.com/v1.0/me',
+                'scopes'                  => $_ENV['GRAPH_USER_SCOPES']
+            ]);
+
+            $accessToken = $oauthClient->getAccessToken('authorization_code', [
+                'code' => Yii::$app->request->get('code')
+            ]);
+
+            $graph = new Graph();
+            $graph->setAccessToken($accessToken->getToken());
+
+            $user = $graph->createRequest('GET', '/me?$select=displayName,mail,userPrincipalName,tenant')
+                ->setReturnType(Model\User::class)
+                ->execute();
+            if ($user) {
+                $model = new LoginForm();
+                $model->login($user);
+            }
+        }
+        $this->layout = 'login';
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }
 
         $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+        if ($model->load(Yii::$app->request->post()) && $model->login(null)) {
             return $this->goHome();
         } else {
             return $this->render('login', [

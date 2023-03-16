@@ -20,10 +20,9 @@
         "bower-asset/bootstrap": "^5.2",
         "bower-asset/jquery": "^3.6",
         "yiisoft/yii2-bootstrap": "^2.0@beta",
-        "microsoft/microsoft-graph": "dev-dev",
         "vlucas/phpdotenv": "^5.5@dev",
-        "guzzlehttp/guzzle": "^7.5@dev",
-        "league/oauth2-client": "^0.12.1"
+        "league/oauth2-client": "dev-master",
+        "microsoft/microsoft-graph": "dev-dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
