@@ -27,7 +27,7 @@ class NotificationsComponents extends Component implements INotification {
                 $allNotifications = $allNotifications . '<p>' . $notification->Description . '</p>';
             }
             if ($count <= 0)
-                $allNotifications = '<p>No hay notificaciones disponibles para su usuario</p>';
+                $allNotifications = '<p>No notifications available for your user</p>';
         }
         return $allNotifications;
     }
@@ -40,7 +40,7 @@ class NotificationsComponents extends Component implements INotification {
         $notification->save();
 
         if (isset($options['Url']))
-            $description = $description . '<a href="' . $options['Url'] . '&notificationId=' . $notification->NotificationId . '"> Ingrese </a>';
+            $description = $description . '<a href="' . $options['Url'] . '&notificationId=' . $notification->NotificationId . '"> Enter </a>';
 
         $notification->Description = $description;
         $notification->NotificationStatusId = \Yii::$app->params['notification.status.pending'];

@@ -9,30 +9,30 @@ use yii\widgets\ActiveForm;
 
 <div class="row">
     <div class="col-md-8">
-        <h1>Importaciones automaticas de SAP</h1>
+        <h1>Automatic imports from SAP</h1>
         <a class="btn btn-success" style="margin-bottom: 1rem;"
            href="<?= Url::to(['check-auto-sap-import/run-again']) ?>">
-            Reejecutar la importación automática
+           Run automatic import
         </a>
         <?php if (Yii::$app->user->can(\common\models\AuthItem::ROLE_SIS_ADMIN)){ ?>
 		<a class="btn btn-primary" style="margin-bottom: 1rem;"
            href="<?= Url::to(['check-auto-sap-import/run-vaciado-oa']) ?>">
-            Vaciar Tabla OA
+           Clear OA Table
         </a>
 		
 		<a class="btn btn-warning" style="margin-bottom: 1rem;"
            href="<?= Url::to(['check-auto-sap-import/run-vaciado-fc-no-cont']) ?>">
-            Vaciar Tabla FC NO CONT
+            Clear FC NO CONT Table
         </a>
 		
 		<a class="btn btn-danger" style="margin-bottom: 1rem;"
            href="<?= Url::to(['check-auto-sap-import/run-vaciado-desp-no-fc']) ?>">
-            Vaciar Tabla DESP NO FC
+            Clear DESP NO FC Table
         </a>		
 		<?php } ?>
     </div>
     <div class="col-md-4">
-        <h1>Realizar una reimportación manual</h1>
+        <h1>Perform a manual reimport</h1>
     </div>
 </div>
 
@@ -40,10 +40,10 @@ use yii\widgets\ActiveForm;
     <div class="col-md-8">
         <table class="table table-striped table-bordered text-center">
             <tr>
-                <th class="text-center">Tipo de importación</th>
-                <th class="text-center">Fecha</th>
-                <th class="text-center">Archivo</th>
-                <th class="text-center">Finalizó correctamente?</th>
+                <th class="text-center">import type</th>
+                <th class="text-center">Date</th>
+                <th class="text-center">File</th>
+                <th class="text-center">Did it finish successfully?</th>
             </tr>
             <?php
             foreach ($imports as $key => $value) {
@@ -61,16 +61,16 @@ use yii\widgets\ActiveForm;
                             <p class="bg-success text-center">SI</p>
                         <?php elseif ($value['FinishedCorrectly'] === 1 && $value['WithErrors'] === 1): ?>
                             <p class="bg-warning text-center">
-                                Si pero con errores -
+                            yes but with errors -
                                 <a href="<?= Url::to(['check-auto-sap-import/errors', 'id' => $value['ImportId']]) ?>">
-                                    Ver errores
+                                see errors
                                 </a>
                             </p>
                         <?php else: ?>
                             <p class="bg-danger text-center">
                                 NO -
                                 <a href="<?= Url::to(['check-auto-sap-import/errors', 'id' => $value['ImportId']]) ?>">
-                                    Ver errores
+                                see errors
                                 </a>
                             </p>
                         <?php endif; ?>
@@ -99,7 +99,7 @@ use yii\widgets\ActiveForm;
             ];
         }
         ?>
-		<?= $form->field($manualModelImport, 'tipo')->dropdownList($typeOptions, ['prompt' => 'Seleccionar tipo de importación', 'class' => 'mySelectBoxClass']) ?>
+		<?= $form->field($manualModelImport, 'tipo')->dropdownList($typeOptions, ['prompt' => 'Select import type', 'class' => 'mySelectBoxClass']) ?>
 
         <?php
         $originOptions = [
@@ -118,7 +118,7 @@ use yii\widgets\ActiveForm;
             ];
         }
         ?>
-		<?= $form->field($manualModelImport, 'origen')->dropdownList($originOptions, ['prompt' => 'Seleccionar origen de importación', 'class' => 'mySelectBoxClass'])?>
+		<?= $form->field($manualModelImport, 'origen')->dropdownList($originOptions, ['prompt' => 'Select import source', 'class' => 'mySelectBoxClass'])?>
 	<?= $form->field($manualModelImport, 'file')->fileInput() ?>
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Import'), ['class' => 'btn btn-primary in-nuevos-reclamos']) ?>

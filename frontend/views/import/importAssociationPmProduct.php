@@ -13,11 +13,11 @@ use yii\widgets\ActiveForm;
 <div class="container full-width">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h1 class="big-title">Importación de Asociación PM con Producto</h1>
+            <h1 class="big-title">Import of PM Association with Product</h1>
             <a style="margin-left: 1rem;" href="<?= Url::to(['import/association-pm-product-download']) ?>">
-                Descargar Asociación PM Producto
+            Download PM Product Association
                 <img width="40px" height="40px" src="<?= Yii::$app->urlManager->baseUrl ?>/images/download.gif"
-                     alt="Descargar plantilla asociación pm producto"/>
+                     alt="Download product pm association template"/>
             </a>
         </div>
     </div>
@@ -40,7 +40,7 @@ use yii\widgets\ActiveForm;
 </div>
 
 <?php
-$this->title = "Asociación PM Producto";
+$this->title = "PM Product Association";
 
 if (isset($errors)) {
 

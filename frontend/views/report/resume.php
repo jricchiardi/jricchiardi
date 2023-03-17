@@ -31,9 +31,9 @@ use yii\widgets\ActiveForm;
             <table  class="table table-striped table-bordered" width="20%">
                 <thead id="head-resume">
                     <tr>
-                        <th colspan="2"><center><h4>Vendedor</h4></center></th>   
-                <th colspan="2"><center><h4>Margen</h4></center></th>
-                <th colspan="2"><center><h4>Cuenta y Orden</h4></center></th>
+                        <th colspan="2"><center><h4>Seller</h4></center></th>   
+                <th colspan="2"><center><h4>Margin</h4></center></th>
+                <th colspan="2"><center><h4>CyO</h4></center></th>
                 <th></th>
                 <th class="space"></th>
                 <th colspan="2"><center><h4>Q1</h4></center></th>
@@ -133,7 +133,7 @@ use yii\widgets\ActiveForm;
 
                         <tr>
 
-                            <td class="grey-col"><?= Yii::t('app', 'Diferencia') ?></td>  
+                            <td class="grey-col"><?= Yii::t('app', 'Diference') ?></td>  
                             <td class="space"></td>            
                             <td class="grey-col"><?= number_format($item['Q1PlanVolume'] - $item['Q1ForecastMoreSaleVolume']) ?> </td>             
                             <td class="grey-col"><?= number_format($item['Q1PlanUSD'] - $item['Q1ForecastMoreSaleUSD'], 2) ?> </td> 
@@ -164,7 +164,7 @@ use yii\widgets\ActiveForm;
     <?php
     $this->registerJS(' 
            $("#reportsearch-rsmid").kendoDropDownList({
-            optionLabel: "Seleccionar",
+            optionLabel: "Select",
             filter: "startswith",
             dataTextField: "Fullname",
             dataValueField: "UserId",
@@ -175,7 +175,7 @@ use yii\widgets\ActiveForm;
             $("#reportsearch-dsmid").kendoDropDownList({
             cascadeFrom: "reportsearch-rsmid",
             cascadeFromField: "RsmId",
-            optionLabel: "Seleccionar",
+            optionLabel: "Select",
             filter: "startswith",
             dataTextField: "Fullname",
             dataValueField: "UserId",

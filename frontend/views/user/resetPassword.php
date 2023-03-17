@@ -12,7 +12,7 @@ use yii\bootstrap\ActiveForm;
 					  <?php $form = ActiveForm::begin(['id' => 'reset-password-form']); ?>
                                            <?= $form->field($model, 'Password')->passwordInput(['class' => 'form-control last', 'placeholder' => Yii::t('app','Password')])->label(false) ?>                                                											
                                            <?= $form->field($model, 'repeatpassword')->passwordInput(['class' => 'form-control last', 'placeholder' => Yii::t('app','Repeat Password')])->label(false) ?>                                                											                                                
-                                           <?= Html::submitButton('Guardar', ['class' => 'btn btn-primary pull-right']) ?>
+                                           <?= Html::submitButton('Save', ['class' => 'btn btn-primary pull-right']) ?>
 					  <?php ActiveForm::end(); ?>
 				</div>
 			</div>

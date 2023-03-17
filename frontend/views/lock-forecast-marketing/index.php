@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $searchModel common\models\LockForecastSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = "Bloqueo Marketing";
+$this->title = "Lock Marketing";
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="lock-forecast-index">

@@ -81,9 +81,9 @@ use yii\helpers\Url;
             //$menuItems[] = ['label' => 'Test reporte segmento negocio', 'url' => ['/test/reporte-segmento-negocio']];
             //$menuItems[] = ['label' => 'Importar Oportunidad', 'url' => ['/import/opportunity']];
             //$menuItems[] = ['label' => 'Importar Selling Out', 'url' => ['/import/selling-out']];
-            $menuItems[] = ['label' => 'Importe automatico de SAP', 'url' => ['/check-auto-sap-import']];
-            $menuItems[] = ['label' => 'Importar Unificación de Clientes', 'url' => ['/import/unificacion-cliente']];
-            $menuItems[] = ['label' => 'Importar Asociación PM Producto', 'url' => ['/import/association-pm-product']];
+            $menuItems[] = ['label' => 'SAP automatic import', 'url' => ['/check-auto-sap-import']];
+            $menuItems[] = ['label' => 'Import Customer Unification', 'url' => ['/import/unificacion-cliente']];
+            $menuItems[] = ['label' => 'Import PM Product Association', 'url' => ['/import/association-pm-product']];
             //$menuItems[] = ['label' => Yii::t('app', 'Consolid Export Marketing'), 'url' => ['/forecast-marketing/export-report-consolid']];
             //$menuItems[] = ['label' => 'Clientes Pioneer', 'url' => ['/pioneer-client']];
         }

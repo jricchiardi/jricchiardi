@@ -14,11 +14,11 @@ use yii\widgets\ActiveForm;
     <br/>
     <div class="row">
         <div class="col-md-6">
-            <h1 class="big-title">Descargar Archivo de Ajustes del plan</h1>
+            <h1 class="big-title">Download Plan Settings File</h1>
             <?php $form = ActiveForm::begin([
                 'action' => Url::to(['plan/download-validation']),
             ]) ?>
-            <?= $form->field($modelDownload, 'plan')->dropdownList(['futuro' => 'Futuro', 'actual' => 'Actual'], ['prompt' => 'Seleccionar tipo de plan a descargar', 'class' => 'mySelectBoxClass']) ?>
+            <?= $form->field($modelDownload, 'plan')->dropdownList(['future' => 'Future', 'current' => 'Current'], ['prompt' => 'Select type of plan to download', 'class' => 'mySelectBoxClass']) ?>
 
             <?php
             $countries = Country::find()
@@ -26,14 +26,14 @@ use yii\widgets\ActiveForm;
                 ->indexBy('CountryId')
                 ->column();
             ?>
-            <?= $form->field($modelDownload, 'pais')->dropdownList($countries, ['prompt' => 'Seleccionar del pais a descargar', 'class' => 'mySelectBoxClass']) ?>
+            <?= $form->field($modelDownload, 'pais')->dropdownList($countries, ['prompt' => 'Select the country to download from', 'class' => 'mySelectBoxClass']) ?>
 
             <div class="form-group">
                 <?= $form->field($modelDownload, 'incluirConVolumenCero')->checkbox() ?>
             </div>
 
             <div class="form-group">
-                <?= Html::submitButton('Descargar', ['class' => 'btn btn-success']) ?>
+                <?= Html::submitButton('Download', ['class' => 'btn btn-success']) ?>
             </div>
             <?php ActiveForm::end() ?>
         </div>
@@ -54,7 +54,7 @@ use yii\widgets\ActiveForm;
         <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
         <?= $form->field($model, 'file')->fileInput() ?>
 
-        <?= $form->field($model, 'plan')->dropdownList(['futuro' => 'Futuro', 'actual' => 'Actual'], ['prompt' => 'Seleccionar plan a modificar', 'class' => 'mySelectBoxClass']) ?>
+        <?= $form->field($model, 'plan')->dropdownList(['future' => 'Future', 'current' => 'Current'], ['prompt' => 'Select plan to modify', 'class' => 'mySelectBoxClass']) ?>
 
         <div class="form-group">
             <?= Html::submitButton(Yii::t('app', 'Import'), ['class' => 'btn btn-primary in-nuevos-reclamos']) ?>

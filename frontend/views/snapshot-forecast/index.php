@@ -29,7 +29,7 @@ $clientIds = Yii::$app->db->createCommand($sql)->queryAll();
             </p>
         <?php else : ?>
             <div class="alert alert-warning">
-                <strong>Warning!</strong> El mes actual debe ser mayor o igual a marzo
+                <strong>Warning!</strong> Current month must be greater than or equal to March
             </div>
         <?php endif; ?>
         <div class="panel panel-default">

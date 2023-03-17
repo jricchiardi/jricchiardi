@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 
-$this->title = "Importación de Unificación de clientes";
+$this->title = "Customer Unification Import";
 
 ?>
 <div class="container full-width">
@@ -14,13 +14,13 @@ $this->title = "Importación de Unificación de clientes";
             <p class="bg-warning">
                 <a href="<?= Url::to(['import/unificacion-cliente-download']) ?>">
                     <img width="40px" height="40px" src="<?= Yii::$app->urlManager->baseUrl ?>/images/download.gif"
-                         alt="Descargar Excel de Unificación de clientes"/>
+                         alt="Download Customer Unification Excel"/>
                 </a>
-                Descargar Excel de Unificación de clientes
+                Download Customer Unification Excel
             </p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h1 class="big-title">Importar Archivo de Unificación de clientes</h1>
+            <h1 class="big-title">Import Customer Unification File</h1>
 
             <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
             <?= $form->field($model, 'file')->fileInput() ?>

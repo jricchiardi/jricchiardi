@@ -12,9 +12,9 @@ use yii\helpers\Html;
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h1 class="big-title"><?=Yii::t('app','Import Sales File'); ?></h1>
             <a style="margin-left: 1rem;" href="<?= Url::to(['import/download-sale']) ?>">
-                Descargar último excel de ventas cargadas manualmente
+            Download last excel of sales loaded manually
                 <img width="40px" height="40px" src="<?= Yii::$app->urlManager->baseUrl ?>/images/download.gif"
-                     alt="Descargar último excel de ventas cargadas manualmente"/>
+                     alt="Download last excel of sales loaded manually"/>
             </a>
         </div>
     </div>
