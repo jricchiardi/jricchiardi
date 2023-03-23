@@ -58,16 +58,16 @@ class LoginForm extends Model
      *
      * @return boolean whether the user is logged in successfully
      */
-    public function login($user)
+    public function login($user = false)
     {
-
-        return Yii::$app->user->login($this->getUser($user), $this->RememberMe ? 3600 * 24 * 30 : 0);
-        // if ($this->validate()) {
-        // return Yii::$app->user->login($this->getUser(), $this->RememberMe ? 3600 * 24 * 30 : 0);
-        // } else {
-        //     die();
-        //     return false;
-        // }
+        if($user){
+            return Yii::$app->user->login($this->getUser($user), $this->RememberMe ? 3600 * 24 * 30 : 0);
+        }
+        if ($this->validate()) {
+        return Yii::$app->user->login($this->getUser(), $this->RememberMe ? 3600 * 24 * 30 : 0);
+        } else {
+            return false;
+        }
     }
 
     /**
@@ -75,10 +75,10 @@ class LoginForm extends Model
      *
      * @return User|null
      */
-    public function getUser($userData)
+    public function getUser($userData = false)
     {
         if ($this->_user === false) {
-            $this->_user = User::findByUsername($userData->getMail(), 'Email');
+            $this->_user = User::findByUsername(@$userData? $userData->getMail():$this->Username, @$userData?'Email':'Username');
         }
 
         return $this->_user;

@@ -92,7 +92,7 @@ class SiteController extends Controller
 
             'clientId'                => $_ENV['CLIENT_ID'],
             'clientSecret'            => $_ENV['SECRET_ID'],
-            'redirectUri'             => 'http://localhost/apptest/frontend/web/site/login',
+            'redirectUri'             => $_ENV['REDIRECT_URI'],
             'urlAuthorize'            => 'https://login.microsoftonline.com/' . $_ENV['TENANT_ID'] . '/oauth2/v2.0/authorize',
             'urlAccessToken'          => 'https://login.microsoftonline.com/' . $_ENV['TENANT_ID'] . '/oauth2/v2.0/token',
             'urlResourceOwnerDetails' => 'https://graph.asdasdmicrosoft.com/v1.0/me',
@@ -165,7 +165,7 @@ class SiteController extends Controller
 
                 'clientId'                => $_ENV['CLIENT_ID'],
                 'clientSecret'            => $_ENV['SECRET_ID'],
-                'redirectUri'             => 'http://localhost/apptest/frontend/web/site/login',
+                'redirectUri'             => $_ENV['REDIRECT_URI'],
                 'urlAuthorize'            => 'https://login.microsoftonline.com/' . $_ENV['TENANT_ID'] . '/oauth2/v2.0/authorize',
                 'urlAccessToken'          => 'https://login.microsoftonline.com/' . $_ENV['TENANT_ID'] . '/oauth2/v2.0/token',
                 'urlResourceOwnerDetails' => 'https://graph.asdasdmicrosoft.com/v1.0/me',
@@ -193,7 +193,7 @@ class SiteController extends Controller
         }
 
         $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login(null)) {
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goHome();
         } else {
             return $this->render('login', [
