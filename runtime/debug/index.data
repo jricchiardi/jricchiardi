@@ -1,0 +1,1 @@
+a:1:{s:13:"63ea7560ac82d";a:12:{s:3:"tag";s:13:"63ea7560ac82d";s:3:"url";s:13:"php yii serve";s:4:"ajax";i:0;s:6:"method";s:7:"COMMAND";s:2:"ip";s:11:"jricchiardi";s:4:"time";d:1676309856.625614;s:10:"statusCode";i:2;s:8:"sqlCount";i:0;s:9:"mailCount";i:0;s:9:"mailFiles";a:0:{}s:10:"peakMemory";i:4911792;s:14:"processingTime";d:0.29524707794189453;}}

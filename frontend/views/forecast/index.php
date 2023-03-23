@@ -2,6 +2,25 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\Modal;
+use yii\widgets\ActiveForm;
+
+?>
+
+<div id="divBlack" style="display:none;">
+    <div id="loading">
+        <img src="<?= Yii::$app->request->baseUrl ?>/images/loading.gif" width="60"/>
+        <br>
+        <?= Yii::t('app', 'Processing...') ?>
+    </div>
+</div>
+
+<div id="containerTec" class="container full-width">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            
+        </div>
+    </div>
+    <?php
 
 $this->title = Yii::t('app', 'Forecast');
 
@@ -1262,6 +1281,28 @@ $monthTo = \Yii::$app->utilcomponents->getAmountQuarter($monthEnableFrom - 1) + 
         kendo.ui.progress(element, boolean);
     }
 </script>
+
+
+<script>
+		$("body").on("click", ".k-grid-excelDetail", function () {
+				// Mostrar spinner de carga
+				$("#divBlack").show();
+            
+				// Ocultar spinner de carga
+				setTimeout(function() {$("#divBlack").hide();}, 5000)
+            })
+
+            $("body").on("click", ".k-grid-excelConsolid", function () {
+				// Mostrar spinner de carga
+				$("#divBlack").show();
+            
+				// Ocultar spinner de carga
+				setTimeout(function() {$("#divBlack").hide();}, 180000)
+            })     
+            
+				
+	</script>
+
 
 <?= $this->registerJS(' refreshGrid();                     
 ', \yii\web\View::POS_LOAD) ?>

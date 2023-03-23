@@ -145,8 +145,8 @@ class User extends ActiveRecordCustom implements IdentityInterface {
      * @param string $username
      * @return static|null
      */
-    public static function findByUsername($username) {
-        return static::findOne(['Username' => $username, 'IsActive' => self::STATUS_ACTIVE]);
+    public static function findByUsername($username, $field = 'Username') {
+        return static::findOne([$field => $username, 'IsActive' => self::STATUS_ACTIVE]);
     }
 
     /**

@@ -8,21 +8,35 @@ use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\ContactForm;
+use League\OAuth2\Client\Provider\GenericProvider;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 
+
+
+use Microsoft\Graph\Graph;
+use Microsoft\Graph\Model;
+
+
+$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__ . '\..\..\\');
+$dotenv->load();
+$dotenv->required(['CLIENT_ID', 'TENANT_ID', 'GRAPH_USER_SCOPES']);
+
 /**
  * Site controller
  */
-class SiteController extends Controller {
+class SiteController extends Controller
+{
+
 
     /**
      * @inheritdoc
      */
-    public function behaviors() {
+    public function behaviors()
+    {
         return [
             'access' => [
                 'class' => AccessControl::className(),
@@ -57,7 +71,9 @@ class SiteController extends Controller {
     /**
      * @inheritdoc
      */
-    public function actions() {
+    public function actions()
+    {
+
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
@@ -69,7 +85,34 @@ class SiteController extends Controller {
         ];
     }
 
-    public function actionIndex() {
+    public function actionLogin_ad()
+    {
+
+        $oauthClient = new GenericProvider([
+
+            'clientId'                => $_ENV['CLIENT_ID'],
+            'clientSecret'            => $_ENV['SECRET_ID'],
+            'redirectUri'             => $_ENV['REDIRECT_URI'],
+            'urlAuthorize'            => 'https://login.microsoftonline.com/' . $_ENV['TENANT_ID'] . '/oauth2/v2.0/authorize',
+            'urlAccessToken'          => 'https://login.microsoftonline.com/' . $_ENV['TENANT_ID'] . '/oauth2/v2.0/token',
+            'urlResourceOwnerDetails' => 'https://graph.asdasdmicrosoft.com/v1.0/me',
+            'scopes'                  => $_ENV['GRAPH_USER_SCOPES']
+        ]);
+
+
+        $authorizationUrl = $oauthClient->getAuthorizationUrl();
+        Yii::$app->getResponse()->redirect($authorizationUrl);
+        // $graph = new GraphHelper;
+        // $graph->initializeGraphForUserAuth();
+        // var_dump($graph->getUser());
+        // die();
+        // $user = $graph->getUser();
+
+
+    }
+
+    public function actionIndex()
+    {
 
         /* IF NOT LOGGED REDIRECT TO SCREEN LOGIN */
         if (is_null(\Yii::$app->user->identity))
@@ -81,15 +124,16 @@ class SiteController extends Controller {
         else {
             /* IS LOGGED */
             if (!\Yii::$app->user->isGuest) {
-                Yii::$app->auditcomponents->createAudit(['UserId'=>\Yii::$app->user->identity->UserId,
-                                                         'TypeAuditId' => \common\models\TypeAudit::TYPE_LOGIN,
-                                                        ]);
+                Yii::$app->auditcomponents->createAudit([
+                    'UserId' => \Yii::$app->user->identity->UserId,
+                    'TypeAuditId' => \common\models\TypeAudit::TYPE_LOGIN,
+                ]);
 
                 if (Yii::$app->user->identity->authAssignment->item_name === AuthItem::ROLE_PM) {
                     return $this->redirect(['/forecast-marketing']);
                 }
-				
-				if (Yii::$app->user->identity->authAssignment->item_name === AuthItem::ROLE_SIS_ADMIN) {
+
+                if (Yii::$app->user->identity->authAssignment->item_name === AuthItem::ROLE_SIS_ADMIN) {
                     return $this->redirect(['/check-auto-sap-import']);
                 }
 
@@ -97,24 +141,53 @@ class SiteController extends Controller {
                 if (Yii::$app->user->identity->authAssignment->item_name === AuthItem::ROLE_SIS_VIEWER) {
                     return $this->redirect(['/sis']);
                 }
-				
+
                 $dashBoardFilter = new \common\components\models\FilterDashboard();
 
                 $dashBoardFilter->load(Yii::$app->request->post());
 
                 $results = Yii::$app->dashboardcomponent->generateDashBoard($dashBoardFilter);
 
-                return $this->render('index', ['results' => $results,
-                            'dashBoardFilter' => $dashBoardFilter]);
+                return $this->render('index', [
+                    'results' => $results,
+                    'dashBoardFilter' => $dashBoardFilter
+                ]);
             }
         }
 
         return $this->redirect(['/site/login']);
     }
 
-    public function actionLogin() {
-        $this->layout = 'login';
+    public function actionLogin()
+    {
+        if (Yii::$app->request->get('code')) {
+            $oauthClient = new GenericProvider([
 
+                'clientId'                => $_ENV['CLIENT_ID'],
+                'clientSecret'            => $_ENV['SECRET_ID'],
+                'redirectUri'             => $_ENV['REDIRECT_URI'],
+                'urlAuthorize'            => 'https://login.microsoftonline.com/' . $_ENV['TENANT_ID'] . '/oauth2/v2.0/authorize',
+                'urlAccessToken'          => 'https://login.microsoftonline.com/' . $_ENV['TENANT_ID'] . '/oauth2/v2.0/token',
+                'urlResourceOwnerDetails' => 'https://graph.asdasdmicrosoft.com/v1.0/me',
+                'scopes'                  => $_ENV['GRAPH_USER_SCOPES']
+            ]);
+
+            $accessToken = $oauthClient->getAccessToken('authorization_code', [
+                'code' => Yii::$app->request->get('code')
+            ]);
+
+            $graph = new Graph();
+            $graph->setAccessToken($accessToken->getToken());
+
+            $user = $graph->createRequest('GET', '/me?$select=displayName,mail,userPrincipalName,tenant')
+                ->setReturnType(Model\User::class)
+                ->execute();
+            if ($user) {
+                $model = new LoginForm();
+                $model->login($user);
+            }
+        }
+        $this->layout = 'login';
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -124,18 +197,20 @@ class SiteController extends Controller {
             return $this->goHome();
         } else {
             return $this->render('login', [
-                        'model' => $model,
+                'model' => $model,
             ]);
         }
     }
 
-    public function actionLogout() {
+    public function actionLogout()
+    {
         Yii::$app->user->logout();
 
         return $this->goHome();
     }
 
-    public function actionContact() {
+    public function actionContact()
+    {
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
@@ -147,35 +222,38 @@ class SiteController extends Controller {
             return $this->refresh();
         } else {
             return $this->render('contact', [
-                        'model' => $model,
+                'model' => $model,
             ]);
         }
     }
 
-    public function actionAbout() {
+    public function actionAbout()
+    {
         return $this->render('about');
     }
 
 
 
-    public function actionRequestPasswordReset() {
+    public function actionRequestPasswordReset()
+    {
         $this->layout = 'login';
         $model = new PasswordResetRequestForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail()) {
-                Yii::$app->getSession()->setFlash('success', Yii::t("app",'Check your email and follow the instructions to reset your E-Mail'));
+                Yii::$app->getSession()->setFlash('success', Yii::t("app", 'Check your email and follow the instructions to reset your E-Mail'));
                 return $this->goHome();
             } else {
-                Yii::$app->getSession()->setFlash('error', Yii::t("app",'We were unable to reset your email contact with your Administrator'));
+                Yii::$app->getSession()->setFlash('error', Yii::t("app", 'We were unable to reset your email contact with your Administrator'));
             }
         }
 
         return $this->render('requestPasswordResetToken', [
-                    'model' => $model,
+            'model' => $model,
         ]);
     }
 
-    public function actionResetPassword($token = NULL) {
+    public function actionResetPassword($token = NULL)
+    {
         $this->layout = 'password';
         try {
             $model = new ResetPasswordForm($token);
@@ -185,58 +263,58 @@ class SiteController extends Controller {
 
         if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
 
-            Yii::$app->getSession()->setFlash('success', Yii::t("app",'The new password was saved correctly.'));
+            Yii::$app->getSession()->setFlash('success', Yii::t("app", 'The new password was saved correctly.'));
 
             return $this->goHome();
         }
 
         return $this->render('resetPassword', [
-                    'model' => $model,
+            'model' => $model,
         ]);
     }
 
     public function actionPerformances()
     {
-          return $this->render('performance/index');
+        return $this->render('performance/index');
     }
     public function actionTrade()
     {
-          return $this->render('trade/index');
+        return $this->render('trade/index');
     }
 
     public function actionPresentation()
     {
-          return $this->render('presentation/index');
+        return $this->render('presentation/index');
     }
 
     public function actionImportClient()
     {
-          return $this->render('import/importClient');
+        return $this->render('import/importClient');
     }
 
     public function actionImportProduct()
     {
-          return $this->render('import/importProduct');
+        return $this->render('import/importProduct');
     }
 
-        public function actionClient()
+    public function actionClient()
     {
-          return $this->render('client/index');
+        return $this->render('client/index');
     }
 
     public function actionPrice()
     {
-          return $this->render('price/index');
+        return $this->render('price/index');
     }
 
 
     public function actionCampaign()
     {
-          return $this->render('campaign/index');
+        return $this->render('campaign/index');
     }
 
     public function actionUser()
     {
-          return $this->render('user/index');
+        return $this->render('user/index');
     }
 }

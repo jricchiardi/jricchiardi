@@ -20,6 +20,9 @@
         "bower-asset/bootstrap": "^5.2",
         "bower-asset/jquery": "^3.6",
         "yiisoft/yii2-bootstrap": "^2.0@beta",
+        "vlucas/phpdotenv": "^5.5@dev",
+        "league/oauth2-client": "dev-master",
+        "microsoft/microsoft-graph": "dev-dev",
         "phpoffice/phpspreadsheet": "dev-master"
     },
     "require-dev": {
