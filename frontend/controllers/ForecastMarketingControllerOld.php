@@ -8,7 +8,8 @@ use common\models\ForecastMarketingOld;
 use common\models\Setting;
 use common\models\TypeAudit;
 use PHPExcel;
-use PHPExcel_IOFactory;
+use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\PhpSpreadsheet\Style\Fill;
 use PHPExcel_Style_Fill;
 use PHPExcel_Style_Protection;
 use Yii;
@@ -86,7 +87,7 @@ ORDER BY [ForecastDescription]
         $forecasts = $connection->createCommand($sql)->queryAll();
 
         // Read the file
-        $objReader = PHPExcel_IOFactory::createReader('Excel2007');
+        $objReader = IOFactory::createReader('Xlsx');
         $objPHPExcel = $objReader->load('templates/Forecast_Marketing_Offline_Template.xlsx');
         $objPHPExcel->getProperties()->setTitle($title);
         $objSheet = $objPHPExcel->getActiveSheet();
@@ -142,7 +143,7 @@ ORDER BY [ForecastDescription]
             if ($row % 2 == 0) {
                 $objSheet->getStyle("A$row:U$row")->applyFromArray([
                     'fill' => [
-                        'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                        'type' => Fill::FILL_SOLID,
                         'color' => [
                             'rgb' => 'F2F2F2'
                         ]
@@ -158,7 +159,7 @@ ORDER BY [ForecastDescription]
         if (($monthEnableFrom - 1) > 1) {
             $objSheet->getStyle("E7:" . $cellFinished . "$row")->applyFromArray([
                 'fill' => [
-                    'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                    'type' => Fill::FILL_SOLID,
                     'color' => [
                         'rgb' => 'BDBDBD'
                     ],
@@ -176,7 +177,7 @@ ORDER BY [ForecastDescription]
         // LOCK THE QUARTERS AND TOTAL
         $solidColor = [
             'fill' => [
-                'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                'type' => Fill::FILL_SOLID,
                 'color' => [
                     'rgb' => 'BDBDBD'
                 ]
@@ -371,7 +372,7 @@ ORDER BY [Pais], [Nombre Product Manager], [Nombre Cliente],[Value Center], [Nom
         $connection = Yii::$app->db;
         $consolidates = $connection->createCommand($sql)->queryAll();
 
-        $objReader = PHPExcel_IOFactory::createReader('Excel2007');
+        $objReader = IOFactory::createReader('Xlsx');
         $objPHPExcel = $objReader->load('templates/Reporte_Real_Ventas_Forecast_Marketing_Consolidado.xlsx');
         $objPHPExcel->setActiveSheetIndex(0);
         $objSheet = $objPHPExcel->getActiveSheet();
@@ -405,7 +406,7 @@ ORDER BY [Pais], [Nombre Product Manager], [Nombre Cliente],[Value Center], [Nom
             if ($row % 2 == 0) {
                 $objSheet->getStyle("A$row:P$row")->applyFromArray([
                     'fill' => [
-                        'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                        'type' => Fill::FILL_SOLID,
                         'color' => [
                             'rgb' => 'F2F2F2'
                         ]
@@ -446,7 +447,7 @@ ORDER BY [Pais], [Nombre Product Manager], [Nombre Cliente],[Value Center], [Nom
         header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT'); // always modified
         header('Cache-Control: cache, must-revalidate'); // HTTP/1.1
         header('Pragma: public'); // HTTP/1.0
-        $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+        $objWriter = IOFactory::createWriter($objPHPExcel, 'Excel2007');
         $objWriter->save('php://output');
     }
 

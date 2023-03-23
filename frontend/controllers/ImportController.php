@@ -18,7 +18,7 @@ use common\models\sap\ClienteUnificado;
 use common\models\TypeImport;
 use common\models\UploadForm;
 use common\models\UploadValidacionPlanForm;
-use PHPExcel_IOFactory;
+use PhpOffice\PhpSpreadsheet\IOFactory;
 use Yii;
 // use yii\base\Object;
 use yii\web\UploadedFile;
@@ -44,7 +44,7 @@ class ImportController extends CustomController
                 $import->TypeImportId = TypeImport::CyO;
                 $pathFile = 'uploads/' . $name;
 
-                $objReader = PHPExcel_IOFactory::createReaderForFile($pathFile);
+                $objReader = IOFactory::createReaderForFile($pathFile);
                 $objReader->setReadDataOnly(true);
                 $objPHPExcel = $objReader->load($pathFile);
                 $sheet = $objPHPExcel->getSheet(0);
@@ -185,7 +185,7 @@ class ImportController extends CustomController
                 $import->TypeImportId = TypeImport::CLIENT;
                 $pathFile = 'uploads/' . $name;
 
-                $objReader = PHPExcel_IOFactory::createReaderForFile($pathFile);
+                $objReader = IOFactory::createReaderForFile($pathFile);
                 $objReader->setReadDataOnly(true);
                 $objPHPExcel = $objReader->load($pathFile);
                 $sheet = $objPHPExcel->getSheet(0);
@@ -431,7 +431,7 @@ class ImportController extends CustomController
                 $import->TypeImportId = TypeImport::OFFLINE;
                 $pathFile = 'uploads/' . $name;
 
-                $objReader = PHPExcel_IOFactory::createReaderForFile($pathFile);
+                $objReader = IOFactory::createReaderForFile($pathFile);
                 $objReader->setReadDataOnly(true);
                 $objPHPExcel = $objReader->load($pathFile);
                 $sheet = $objPHPExcel->getSheet(0);
@@ -496,7 +496,7 @@ class ImportController extends CustomController
 
                 $pathFile = 'uploads/' . $name;
 
-                $objReader = PHPExcel_IOFactory::createReaderForFile($pathFile);
+                $objReader = IOFactory::createReaderForFile($pathFile);
                 $objReader->setReadDataOnly(true);
                 $objPHPExcel = $objReader->load($pathFile);
                 $sheet = $objPHPExcel->getSheet(0);
@@ -549,7 +549,7 @@ class ImportController extends CustomController
 
                 $pathFile = 'uploads/' . $name;
 
-                $objReader = PHPExcel_IOFactory::createReaderForFile($pathFile);
+                $objReader = IOFactory::createReaderForFile($pathFile);
                 $objReader->setReadDataOnly(true);
                 $objPHPExcel = $objReader->load($pathFile);
                 $sheet = $objPHPExcel->getSheet(0);

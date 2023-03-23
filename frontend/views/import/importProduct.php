@@ -4,8 +4,13 @@ use yii\widgets\ActiveForm;
 use yii\helpers\Html;
 ?>
 
-
-
+<div id="divBlack" style="display:none;">
+    <div id="loading" >
+        <img src="<?= Yii::$app->request->baseUrl ?>/images/loading.gif" width="60"/>
+        <br>
+        <?=Yii::t('app','Processing...') ?>
+    </div>
+</div>
 
 <div class="container full-width">
     <div class="row">

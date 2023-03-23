@@ -4,6 +4,9 @@ namespace frontend\controllers;
 
 use Yii;
 use common\models\ClientSeller;
+use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\PhpSpreadsheet\Style\Fill;
+
 
 /**
  * Site controller
@@ -256,7 +259,7 @@ ORDER BY PlanDescription ASC
 
 
         // Read the file
-        $objReader = \PHPExcel_IOFactory::createReader('Excel2007');
+        $objReader = IOFactory::createReader('Xlsx');
         $objPHPExcel = $objReader->load('templates/Ventas_Forecast_Detallado_Template.xlsx');
 
         $objPHPExcel->setActiveSheetIndex(0);
@@ -297,7 +300,7 @@ ORDER BY PlanDescription ASC
             $objSheet->SetCellValue(chr($charCol++) . $row, '=I' . $row . '+M' . $row . '+Q' . $row . '+U' . $row);
             if ($row % 2 == 0)
                 $objSheet->getStyle("A$row:W$row")->applyFromArray(
-                        array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                        array('fill' => array('type' => Fill::FILL_SOLID,
                                 'color' => array('rgb' => 'F2F2F2')
                             )
                 ));
@@ -341,7 +344,7 @@ ORDER BY PlanDescription ASC
             $objSheet->SetCellValue(chr($charCol++) . $row, '=I' . $row . '+M' . $row . '+Q' . $row . '+U' . $row);
             if ($row % 2 == 0)
                 $objSheet->getStyle("A$row:W$row")->applyFromArray(
-                        array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                        array('fill' => array('type' => Fill::FILL_SOLID,
                                 'color' => array('rgb' => 'F2F2F2')
                             )
                 ));
@@ -361,7 +364,7 @@ ORDER BY PlanDescription ASC
         header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT'); // always modified
         header('Cache-Control: cache, must-revalidate'); // HTTP/1.1
         header('Pragma: public'); // HTTP/1.0
-        $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+        $objWriter = IOFactory::createWriter($objPHPExcel, 'Excel2007');
         $objWriter->save('php://output');
     }
     
@@ -411,7 +414,7 @@ ORDER BY PlanDescription ASC
 
                    
         // Read the file
-        $objReader = \PHPExcel_IOFactory::createReader('Excel2007');
+        $objReader = IOFactory::createReader('Xlsx');
         $objPHPExcel = $objReader->load('templates/Plan_Validation_Offline_Template.xlsx');
         $objPHPExcel->getProperties()->setTitle($title);
         $objSheet = $objPHPExcel->getActiveSheet();
@@ -470,7 +473,7 @@ ORDER BY PlanDescription ASC
             
             if ($row % 2 == 0)
                 $objSheet->getStyle("A$row:AC$row")->applyFromArray(
-                        array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                        array('fill' => array('type' => Fill::FILL_SOLID,
                                 'color' => array('rgb' => 'F2F2F2')
                             )
                 ));
@@ -498,31 +501,31 @@ ORDER BY PlanDescription ASC
         $row--;
         
         $objSheet->getStyle("P7:" . "P$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FDE9D9')
                     )
         ));
 
         $objSheet->getStyle("T7:" . "T$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FDE9D9')
                     )
         ));
 
         $objSheet->getStyle("X7:" . "X$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FDE9D9')
                     )
         ));
 
         $objSheet->getStyle("AB7:" . "AB$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FDE9D9')
                     )
         ));
 
         $objSheet->getStyle("AC7:" . "AC$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'FABF8F')
                     )
         ));
@@ -539,7 +542,7 @@ ORDER BY PlanDescription ASC
         header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT'); // always modified
         header('Cache-Control: cache, must-revalidate'); // HTTP/1.1
         header('Pragma: public'); // HTTP/1.0
-        $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+        $objWriter = IOFactory::createWriter($objPHPExcel, 'Excel2007');
         $objWriter->save('php://output');
     }
     
@@ -576,7 +579,7 @@ ORDER BY PlanDescription ASC
                                                      ]);
          
         // Read the file
-        $objReader = \PHPExcel_IOFactory::createReader('Excel2007');
+        $objReader = IOFactory::createReader('Xlsx');
         $objPHPExcel = $objReader->load('templates/Plan_Offline_Template.xlsx');
         $objPHPExcel->getProperties()->setTitle($title);
         $objSheet = $objPHPExcel->getActiveSheet();
@@ -628,7 +631,7 @@ ORDER BY PlanDescription ASC
             
              if ($row % 2 == 0)
                 $objSheet->getStyle("A$row:V$row")->applyFromArray(
-                        array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                        array('fill' => array('type' => Fill::FILL_SOLID,
                                 'color' => array('rgb' => 'F2F2F2')
                             )
                 ));
@@ -648,31 +651,31 @@ ORDER BY PlanDescription ASC
         
         
         $objSheet->getStyle("M7:" . "M$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'BDBDBD')
                     )
         ));
 
         $objSheet->getStyle("I7:" . "I$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'BDBDBD')
                     )
         ));
 
         $objSheet->getStyle("Q7:" . "Q$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'BDBDBD')
                     )
         ));
 
         $objSheet->getStyle("U7:" . "U$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'BDBDBD')
                     )
         ));
 
         $objSheet->getStyle("V7:" . "V$row")->applyFromArray(
-                array('fill' => array('type' => \PHPExcel_Style_Fill::FILL_SOLID,
+                array('fill' => array('type' => Fill::FILL_SOLID,
                         'color' => array('rgb' => 'BDBDBD')
                     )
         ));
@@ -689,7 +692,7 @@ ORDER BY PlanDescription ASC
         header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT'); // always modified
         header('Cache-Control: cache, must-revalidate'); // HTTP/1.1
         header('Pragma: public'); // HTTP/1.0
-        $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+        $objWriter = IOFactory::createWriter($objPHPExcel, 'Excel2007');
         $objWriter->save('php://output');
     }
 }

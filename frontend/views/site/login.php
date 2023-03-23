@@ -23,6 +23,9 @@ use yii\bootstrap\ActiveForm;
                                         <?= Html::submitButton('Login', ['class' => 'btn btn-primary pull-right', 'name' => 'login-button']) ?>
                                         
 					<?php ActiveForm::end(); ?>
+
+					<?= Html::a('Login AD', ['site/login_ad'],['class'=>'btn btn-primary pull-left']) ?>	
+
 				</div>
 			</div>
 		</div>		

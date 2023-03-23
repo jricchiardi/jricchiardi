@@ -77,15 +77,15 @@ use yii\helpers\Url;
             $menuItems[] = ['label' => Yii::t('app', 'Users'), 'url' => ['/user/index']];
             $menuItems[] = ['label' => Yii::t('app', 'Validation Plan'), 'url' => ['/import/setting']];
             $menuItems[] = ['label' => Yii::t('app', 'Sales'), 'url' => ['/sale/index']];
-            $menuItems[] = ['label' => 'Test reporte segmento comercio', 'url' => ['/test/reporte-segmento-comercio']];
-            $menuItems[] = ['label' => 'Test reporte segmento negocio', 'url' => ['/test/reporte-segmento-negocio']];
-            $menuItems[] = ['label' => 'Importar Oportunidad', 'url' => ['/import/opportunity']];
-            $menuItems[] = ['label' => 'Importar Selling Out', 'url' => ['/import/selling-out']];
+            //$menuItems[] = ['label' => 'Test reporte segmento comercio', 'url' => ['/test/reporte-segmento-comercio']];
+            //$menuItems[] = ['label' => 'Test reporte segmento negocio', 'url' => ['/test/reporte-segmento-negocio']];
+            //$menuItems[] = ['label' => 'Importar Oportunidad', 'url' => ['/import/opportunity']];
+            //$menuItems[] = ['label' => 'Importar Selling Out', 'url' => ['/import/selling-out']];
             $menuItems[] = ['label' => 'Importe automatico de SAP', 'url' => ['/check-auto-sap-import']];
             $menuItems[] = ['label' => 'Importar Unificación de Clientes', 'url' => ['/import/unificacion-cliente']];
             $menuItems[] = ['label' => 'Importar Asociación PM Producto', 'url' => ['/import/association-pm-product']];
-            $menuItems[] = ['label' => Yii::t('app', 'Consolid Export Marketing'), 'url' => ['/forecast-marketing/export-report-consolid']];
-            $menuItems[] = ['label' => 'Clientes Pioneer', 'url' => ['/pioneer-client']];
+            //$menuItems[] = ['label' => Yii::t('app', 'Consolid Export Marketing'), 'url' => ['/forecast-marketing/export-report-consolid']];
+            //$menuItems[] = ['label' => 'Clientes Pioneer', 'url' => ['/pioneer-client']];
         }
 
         if (Yii::$app->user->can(AuthItem::ROLE_SIS_ADMIN)) {
