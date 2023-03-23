@@ -12,7 +12,7 @@ use yii\helpers\Html;
     </div>
 </div>
 
-<div class="container full-width">
+<div id="containerTec" class="container full-width">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">				
             <h1 class="big-title"><?=Yii::t('app','Import Products File'); ?></h1>
@@ -27,7 +27,7 @@ use yii\helpers\Html;
             <?= $form->field($model, 'file')->fileInput() ?>                            
 
             <div class="form-group">      
-                <?= Html::submitButton(Yii::t('app', 'Import'), ['class' => 'btn btn-primary in-nuevos-reclamos']) ?>
+                <?= Html::submitButton(Yii::t('app', 'Import'), ['id' => 'save','class' => 'btn btn-primary in-nuevos-reclamos']) ?>
             </div>           
             <?php ActiveForm::end() ?>                      
 
@@ -81,8 +81,13 @@ if (isset($errors)) {
 
             </div>
         </div>
-    </div>
-
-    <?php
+    </div> <?php
 }
 ?>
+<script>
+    $('#save').click(function () {
+        var has_error = $("#containerTec").find(".has-error").text();
+        if (!has_error)
+            $('#divBlack').show();
+    });
+</script>
